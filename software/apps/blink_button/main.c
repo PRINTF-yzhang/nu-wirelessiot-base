@@ -1,6 +1,6 @@
-// Button blink app
+// Buttons app
 //
-// Use buttons and switches to control LEDs to blink
+// Use buttons and switches to control LEDs
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -28,16 +28,16 @@ int main(void) {
     nrf_gpio_cfg_input(BUTTON4, NRF_GPIO_PIN_PULLUP);
 
     // Enter main loop.
-    while (nrf_gpio_pin_read(BUTTON2)) {
-        nrf_gpio_pin_set(LED2);
-        nrf_gpio_pin_toggle(LED2);
-        nrf_delay_ms(500);
-//        if (nrf_gpio_pin_read(BUTTON1)) {
-//            nrf_gpio_pin_set(LED1);
-//        } else {
-//            nrf_gpio_pin_clear(LED1);
-//        }
-//
+    while (1) {
+        if (nrf_gpio_pin_read(BUTTON2)) {
+            //nrf_gpio_pin_set(LED2);
+            nrf_gpio_pin_toggle(LED2);
+            nrf_delay_ms(500);
+        } else {
+            nrf_gpio_pin_clear(LED2);
+            nrf_gpio_pin_set(LED1);
+        }
+
 //        if (nrf_gpio_pin_read(BUTTON2)) {
 //            nrf_gpio_pin_set(LED2);
 //        } else {
@@ -55,6 +55,6 @@ int main(void) {
 //        } else {
 //            nrf_gpio_pin_clear(LED4);
 //        }
-    }
+//    }
 }
 
