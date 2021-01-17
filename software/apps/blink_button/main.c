@@ -30,7 +30,7 @@ int main(void) {
     // Enter main loop.
     while (1) {
         if (nrf_gpio_pin_read(BUTTON2)) {
-            //nrf_gpio_pin_set(LED2);
+            nrf_gpio_pin_set(LED2);
             nrf_gpio_pin_toggle(LED2);
             nrf_delay_ms(500);
         } else {
