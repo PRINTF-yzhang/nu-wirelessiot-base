@@ -42,18 +42,20 @@ int main(void) {
         } else {
             nrf_gpio_pin_clear(LED2);
         }
-//
-//        if (nrf_gpio_pin_read(BUTTON3)) {
-//            nrf_gpio_pin_set(LED3);
-//        } else {
-//            nrf_gpio_pin_clear(LED3);
-//        }
-//
-//        if (nrf_gpio_pin_read(BUTTON4)) {
-//            nrf_gpio_pin_set(LED4);
-//        } else {
-//            nrf_gpio_pin_clear(LED4);
-//        }
+
+        if (nrf_gpio_pin_read(BUTTON3)) {
+            nrf_gpio_pin_toggle(LED3);
+            nrf_delay_ms(500);
+        } else {
+            nrf_gpio_pin_clear(LED3);
+        }
+
+        if (nrf_gpio_pin_read(BUTTON4)) {
+            nrf_gpio_pin_toggle(LED4);
+            nrf_delay_ms(500);
+        } else {
+            nrf_gpio_pin_clear(LED4);
+        }
     }
 }
 
