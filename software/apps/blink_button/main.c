@@ -32,30 +32,39 @@ int main(void) {
     while (1) {
         if (nrf_gpio_pin_read(BUTTON1)) {
             nrf_gpio_pin_toggle(LED1);
+            printf("Button 1 flashing\n");
             nrf_delay_ms(500);
         } else {
             nrf_gpio_pin_clear(LED1);
+            printf("Button 1 keep on\n");
+
         }
 
         if (nrf_gpio_pin_read(BUTTON2)) {
             nrf_gpio_pin_toggle(LED2);
+            printf("Button 2 flashing\n");
             nrf_delay_ms(500);
         } else {
             nrf_gpio_pin_clear(LED2);
+            printf("Button 2 keep on\n");
         }
 
         if (nrf_gpio_pin_read(BUTTON3)) {
             nrf_gpio_pin_toggle(LED3);
+            printf("Button 3 flashing\n");
             nrf_delay_ms(500);
         } else {
             nrf_gpio_pin_clear(LED3);
+            printf("Button 3 keep on\n");
         }
 
         if (nrf_gpio_pin_read(BUTTON4)) {
             nrf_gpio_pin_toggle(LED4);
+            printf("Button 4 flashing\n");
             nrf_delay_ms(500);
         } else {
             nrf_gpio_pin_clear(LED4);
+            printf("Button 4 keep on\n");
         }
     }
 }

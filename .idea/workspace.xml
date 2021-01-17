@@ -33,7 +33,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371c6230-ed08-437c-b914-68c47a2d5c02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/software/apps/blink_button/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/software/apps/blink_button/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software/apps/blink_button/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/software/apps/blink_button/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610914113069</updated>
-      <workItem from="1610914115851" duration="2487000" />
+      <workItem from="1610914115851" duration="3254000" />
     </task>
     <servers />
   </component>
