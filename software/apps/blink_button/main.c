@@ -55,6 +55,6 @@ int main(void) {
 //        } else {
 //            nrf_gpio_pin_clear(LED4);
 //        }
-//    }
+    }
 }
 
