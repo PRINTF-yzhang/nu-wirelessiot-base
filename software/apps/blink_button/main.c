@@ -1,6 +1,7 @@
 // Buttons app
 //
 // Use buttons and switches to control LEDs
+// keep pressing a button will cause the LED to stop flashing and keep on.
 
 #include <stdbool.h>
 #include <stdint.h>
