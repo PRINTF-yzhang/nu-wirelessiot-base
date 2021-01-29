@@ -52,9 +52,13 @@ void ble_evt_adv_report(ble_evt_t const *p_ble_evt) {
 
         printf("\nadvertisement payload data length: %d\n", adv_len);
         for (int i = 0; i < adv_len; i++) {
-            printf("\n%c", adv_buf[i]);
+            printf("\n%x", adv_buf[i]);
         }
-
+        printf("\n%X Flags\n",adv_buf[1]);
+        printf("\n%X Data\n",adv_buf[0]);
+        printf("\n%X Data\n",adv_buf[2]);
+        printf("\n%X Data\n",adv_buf[3]);
+        printf("\n%X Data\n",adv_buf[4]);
     }
 
 }
