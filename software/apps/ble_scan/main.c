@@ -49,10 +49,10 @@ void ble_evt_adv_report(ble_evt_t const *p_ble_evt) {
         for (int i = 0; i <= 5; i++) {
             printf("%x", ble_addr[i]);
         }
-        printf("\nadvertisement payload data length: ");
+
         printf("\nadvertisement payload data length: %d\n", adv_len);
         for (int i = 0; i < adv_len; i++) {
-            printf("\n%x", adv_buf[i]);
+            printf("\n%c", adv_buf[i]);
         }
 
     }
