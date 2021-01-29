@@ -37,7 +37,7 @@ int main(void) {
   simple_ble_app = simple_ble_init(&ble_config);
 
   // Start Advertising
-  simple_ble_adv_only_name("yzhang23.com");
+  simple_ble_es_with_name("yzhang23.com");
   printf("Started BLE advertisements with name %s\n", ble_config.adv_name);
 
   while(1) {
