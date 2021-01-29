@@ -41,11 +41,7 @@ void ble_evt_adv_report(ble_evt_t const *p_ble_evt) {
     uint16_t adv_len = adv_report->data.len; // length of advertisement payload data
 
     if (ble_addr[0] == 0xBB &&
-        ble_addr[1] == 0xAA &&
-        ble_addr[2] == 0x4E &&
-        ble_addr[3] == 0xE5 &&
-        ble_addr[4] == 0x98 &&
-        ble_addr[5] == 0xC0) {
+        ble_addr[1] == 0xAA ) {
         printf("Received an advertisement!\n");
         printf("BLE address: ");
         for (int i = 0; i <= 5; i++) {
@@ -56,7 +52,6 @@ void ble_evt_adv_report(ble_evt_t const *p_ble_evt) {
         for (int i = 0; i < adv_len; i++) {
             printf("\n%x", adv_buf[i]);
         }
-
 
     }
 
